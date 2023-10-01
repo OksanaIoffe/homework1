@@ -84,5 +84,9 @@ print(task(n))
 print("  ")
 
 print("задание 10")
-
+lst = [0, 1]
+n, k = int(input('введите число: ')), int(input('введите число: ')) - 1
+for i in range(1, n + 1):
+    lst.append(lst[-2] + lst[-1])
+print(sum(lst[k: len(lst)]))
 
